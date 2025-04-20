@@ -1,0 +1,120 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px 0;
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.navbar ul li a {
+    color: #FFD700;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 18px;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #FF8C00;
+    transform: scale(1.1);
+}
+
+/* Background Video */
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-container video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/* Body */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    text-align: center;
+    padding-top: 70px; /* Prevent navbar overlap */
+    background: #1a1a1a;
+}
+
+/* Centered Section */
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    min-height: 600px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 60px;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0px 6px 15px rgba(255, 255, 255, 0.4);
+    border: 3px solid #FFD700;
+    text-align: center;
+}
+
+/* Spacing */
+.container h1, .container p {
+    margin-bottom: 40px;
+}
+
+/* File Upload */
+input[type="file"] {
+    padding: 12px;
+    border: 2px solid #FFD700;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border-radius: 8px;
+    width: 90%;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+/* Sleek Buttons */
+button {
+    padding: 18px 28px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(45deg, #FFD700, #FF8C00);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+    width: 90%;
+    display: block;
+    margin: 40px auto;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #FF8C00, #FFD700);
+    transform: scale(1.1);
+}

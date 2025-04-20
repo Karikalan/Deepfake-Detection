@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Deepfake Detector</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <!-- Background Video -->
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="static/videos/background.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Deepfake Detection System</h1>
+        <p>Upload an image to check.</p>
+
+        <form id="uploadForm">
+            <input type="file" id="fileInput" required>
+            <button type="submit">Analyze</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <!-- Navigation Bar (Below the Section) -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/awareness">Deepfake Awareness</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
